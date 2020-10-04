@@ -1,4 +1,4 @@
-Partidos_a_elegir = print("Ingrese un partido entre MAS o UNIR")
+Partidos_a_elegir = print("Ingrese un partido entre MAS o MNR")
 partido1 = "MAS"
 partido2 = "MNR"
 print(partido1, partido2)
