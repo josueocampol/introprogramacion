@@ -1,9 +1,13 @@
-def imc(estatura, peso):
-    return peso / estatura**2
-
 estatura = float(input("Ingrese su estatura: "))
 peso = int(input("Ingrese su peso: "))
+edad = int(input("Ingrese su edad: "))
 
-indice = imc(peso, estatura)
-
-print("Su IMC es: {}".format(indice))
+imc = peso / estatura**2
+if imc < 22.0 and edad < 45:
+    print(f"Su IMC es: {imc}, su condición de riesgo es bajo")
+elif imc < 22.0 and edad >= 45:
+    print(f"Su IMC es: {imc}, su condición de riesgo es medio")
+elif imc >= 22.0 and edad < 45:
+    print (f"Su IMC es: {imc}, su condición de riesgo es medio")
+elif imc >= 22.0 and edad >= 45:
+    print (f"Su IMC es: {imc}, su condición de riesgo es alta")
