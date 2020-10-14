@@ -11,4 +11,4 @@ t.tm_mon
 t.tm_year
 2020
 if año<2020:
-    print(f"Usted tiene {-año+2020} años")
+    print(f"Usted tiene {-año+2020} años y su cumpleaños es el {dia} de {mes}")
