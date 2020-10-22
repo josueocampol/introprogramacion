@@ -5,4 +5,4 @@ def tablaM(numI):
 
 
 for i in range (1,11):
-    print("La tabla del ",i,"es: ",num, "x", i," = ",i*num)
+    print("La tabla del ",i,"es: ",num, "x", i," = ",tablaM(i))
