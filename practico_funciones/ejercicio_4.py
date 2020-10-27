@@ -1,14 +1,8 @@
-def comp (x) :
-    if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
-        return ("True")
+def buscarvocales(letra):
+    if letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u" :
+        print("True")
     else:
-        return ("False")
+        print("False")
 
-if __name__ == "__main__":
-    le = str(input("Ingrese una letra: "))
-    var = comp(le)
-
-    if var == True:
-        print("Es vocal")
-    else:
-        print("No es vocal")
+letra = input("Ingrese una letra: ")
+buscarvocales(letra)
