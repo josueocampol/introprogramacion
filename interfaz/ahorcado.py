@@ -60,9 +60,10 @@ def imprimirAhorcado(intentos):
         print("=            /  \ ")
         print("===         /    \ ")
 
+archivoPalabras=open("palabras_ocultas.txt","r")
 
-
-palabraoculta="ARROZ"
+palabraoculta=archivoPalabras.readline()
+archivoPalabras.close()
 tam=len(palabraoculta)
 vectorPalabraOculta=[]
 vectorPalabraGuiones=[]
