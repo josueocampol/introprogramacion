@@ -83,6 +83,7 @@ while(intentos>0):
     for pos in range(0,tam,1):
         if(letra.upper()==vectorPalabraOculta[pos]):
             vectorPalabraGuiones[pos]=letra.upper()
+            coincidencias=coincidencias+1
 
 
 
