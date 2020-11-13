@@ -67,12 +67,15 @@ tam=len(palabraoculta)
 vectorPalabraOculta=[]
 vectorPalabraGuiones=[]
 intentos=6
+
 for pos in range (0,tam,1):
     vectorPalabraOculta.append(str(palabraoculta[pos]))
     vectorPalabraGuiones.append("-")
 
+
 print(vectorPalabraGuiones)
 while(intentos>0):
+
     print("Cantidad de intentos: ",intentos)
     coincidencias=0
     cantidadguiones=0
@@ -80,6 +83,8 @@ while(intentos>0):
     for pos in range(0,tam,1):
         if(letra.upper()==vectorPalabraOculta[pos]):
             vectorPalabraGuiones[pos]=letra.upper()
+
+
 
     print(vectorPalabraGuiones)
 
