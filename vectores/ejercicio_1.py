@@ -6,7 +6,6 @@ def factorial(numero):
     for i in range(1,numero+1):
         fac = fac * i
 
-        print(fac)
         FACT.append(fac)
     print(FACT)
 
