@@ -1,18 +1,20 @@
 import random
-n=int(input("Ingrese el tamaño del array: "))
-vectorA=[]
+num=int(input("Ingrese el tamaño del vector: "))
+def VectorRandom(num):
+    vector=[]
+    for i in range(1,num+1):
+        vector.append(random.randint(0,300))
+    return vector
 
-for i in range(0,n):
-    num = random.randint(0, 300)
-    p=str(num)
-    vectorA.append(num)
-    g = p[len(p) - 1]
 
-ultimodigito = input("Mostrar números que acaben en: ")
+VNumAl=VectorRandom(num)
+vectorEncontrado=[]
+print(VNumAl)
 
-vectorB = []
-if g == ultimodigito:
-        vectorB.append(p)
-
-print(vectorA)
-print(vectorB)
+ultimodigito=int(input("Mostrar los números que acaben en: "))
+for i in range(0,num):
+    valor=VNumAl[i]
+    residuo = valor % 10
+    if (residuo == ultimodigito):
+        vectorEncontrado.append(valor)
+print(vectorEncontrado)
